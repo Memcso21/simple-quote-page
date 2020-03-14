@@ -1,10 +1,12 @@
+/* === MAIN STYLES === */
+
 html {
   height: 100%;
   width: 100%;
 }
 
 body {
-  color: rgb(64, 64, 64);
+  color: rgb(38, 38, 38);
   background-image: url(assets/freedom.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,4 +34,39 @@ body {
 .author {
   font-family: 'Crimson Text', serif;
   font-size: 1.3rem;
+}
+
+.author::before {
+  display: inline-block;
+  content: "";
+  width: 0.8rem;
+  height: 1px;
+  background-color: rgb(38, 38, 38);
+  vertical-align: middle;
+}
+
+/* === MEDIA QUIRES === */
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+    
+  .wrapper {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+  }
+
 }
